@@ -1,10 +1,3 @@
-//
-//  File.swift
-//
-//
-//  Created by Bora Erdem on 5.02.2024.
-//
-
 import Foundation
 import Defaults
 import StoreKit
@@ -17,13 +10,13 @@ public protocol RatingAlertProtocol {
 }
 
 public final class RatingManager {
-    nonisolated(unsafe) private static var askCount = 0
+    private static var askCount = 0
 
     public static func showNativeRating() {
         SKStoreReviewController.requestReviewInCurrentScene()
     }
     
-    @MainActor public static func increaseLikeCountAndShowRatePopup(for alert: RatingAlertProtocol) {
+    public static func increaseLikeCountAndShowRatePopup(for alert: RatingAlertProtocol) {
         if self.ratingPromptCounterLogic() {
             RatingManager.askCount += 1
             self.prepareCustomRatePopup(for: alert)
@@ -32,7 +25,7 @@ public final class RatingManager {
         }
     }
     
-    @MainActor private static func prepareCustomRatePopup(for alert: RatingAlertProtocol) {
+    private static func prepareCustomRatePopup(for alert: RatingAlertProtocol) {
         AlertManager.show(
             title: alert.title,
             message: alert.description,

@@ -2,7 +2,7 @@ import UIKit
 
 @available(iOS 13.0, tvOS 13.0, *)
 public final class AlertManager {
-     @MainActor public static func show(
+    public static func show(
         title: String?,
         message: String?,
         action1Title: String,

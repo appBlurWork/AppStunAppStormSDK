@@ -10,8 +10,8 @@ public extension UIWindow {
         return keyWindow
     }
 }
-
-@MainActor @available(iOS 13.0, tvOS 13.0, *)
+ 
+@available(iOS 13.0, tvOS 13.0, *)
 public func topViewController() -> UIViewController? {
     let keyWindow = UIWindow.keyWindow
     if var topController = keyWindow?.rootViewController {

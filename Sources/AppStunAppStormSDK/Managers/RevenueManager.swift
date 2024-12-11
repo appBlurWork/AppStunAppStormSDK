@@ -1,10 +1,3 @@
-//
-//  File.swift
-//
-//
-//  Created by Bora Erdem on 5.02.2024.
-//
-
 import Foundation
 import Defaults
 import Qonversion
@@ -41,9 +34,9 @@ public final class RevenueManager: NSObject {
         Qonversion.shared().setEntitlementsUpdateListener(self)
     }
         
-    static nonisolated(unsafe) private var products: [OfferPruduct] = []
-    static nonisolated(unsafe) private var isPackagesFetched = false
-    static nonisolated(unsafe) public var updateUI: (()->())?
+    static private var products: [OfferPruduct] = []
+    static private var isPackagesFetched = false
+    static public var updateUI: (()->())?
     
     public static func fetchProdutcs() {
         

@@ -5,7 +5,7 @@ import UIKit
 public final class MailHelper {
     public static let mailTo: String = "support@appstun.com"
     
-    @MainActor public static func createEmailUrl(to: String, subject: String, body: String) -> URL? {
+    public static func createEmailUrl(to: String, subject: String, body: String) -> URL? {
          let subjectEncoded = subject.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
          let bodyEncoded = body.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
 
