@@ -1,6 +1,15 @@
 {
-  "originHash" : "c15211ec31e99075390a5369f5757581dcf294fb91b3bc6d6b981e39055eb682",
+  "originHash" : "c0898f33f005ff14d47aa7699959babd7f569e07592a46e8febb8cb1d18fc3a7",
   "pins" : [
+    {
+      "identity" : "defaults",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/Defaults.git",
+      "state" : {
+        "revision" : "38925e3cfacf3fb89a81a35b1cd44fd5a5b7e0fa",
+        "version" : "8.2.0"
+      }
+    },
     {
       "identity" : "mobilliumbuilders",
       "kind" : "remoteSourceControl",

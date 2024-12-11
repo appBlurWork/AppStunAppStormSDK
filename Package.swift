@@ -15,7 +15,8 @@ let package = Package(
             targets: ["AppStunAppStormSDK"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/mobillium/MobilliumBuilders.git", from: "1.6.1")
+        .package(url: "https://github.com/mobillium/MobilliumBuilders.git", from: "1.6.1"),
+        .package(url: "https://github.com/sindresorhus/Defaults.git", from: "8.2.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -23,7 +24,8 @@ let package = Package(
         .target(
             name: "AppStunAppStormSDK",
             dependencies: [
-                "MobilliumBuilders"
+                "MobilliumBuilders",
+                "Defaults"
             ]
         ),
 
