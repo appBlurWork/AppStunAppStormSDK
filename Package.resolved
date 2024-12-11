@@ -1,0 +1,15 @@
+{
+  "originHash" : "c15211ec31e99075390a5369f5757581dcf294fb91b3bc6d6b981e39055eb682",
+  "pins" : [
+    {
+      "identity" : "mobilliumbuilders",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mobillium/MobilliumBuilders.git",
+      "state" : {
+        "revision" : "babf60cfda74e0ab468e28e8f082e11b26ff90e7",
+        "version" : "1.6.1"
+      }
+    }
+  ],
+  "version" : 3
+}
