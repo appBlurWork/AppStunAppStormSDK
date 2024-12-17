@@ -1,3 +1,10 @@
+//
+//  File.swift
+//  
+//
+//  Created by Bora Erdem on 5.02.2024.
+//
+
 import UIKit
 
 @available(iOS 13.0, tvOS 13.0, *)
@@ -10,7 +17,7 @@ public extension UIWindow {
         return keyWindow
     }
 }
- 
+
 @available(iOS 13.0, tvOS 13.0, *)
 public func topViewController() -> UIViewController? {
     let keyWindow = UIWindow.keyWindow

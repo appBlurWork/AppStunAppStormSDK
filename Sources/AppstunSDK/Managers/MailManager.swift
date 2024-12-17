@@ -1,9 +1,16 @@
+//
+//  File.swift
+//  
+//
+//  Created by Bora Erdem on 5.02.2024.
+//
+
 import MessageUI
 import UIKit
 
 @available(iOS 13.0, tvOS 13.0, *)
 public final class MailHelper {
-    public static let mailTo: String = "support@appstun.com"
+    public static var mailTo: String = "support@appstun.com"
     
     public static func createEmailUrl(to: String, subject: String, body: String) -> URL? {
          let subjectEncoded = subject.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
@@ -28,7 +35,7 @@ public final class MailHelper {
          return defaultUrl
      }
     
-    @MainActor public static func presentSupportMailComposer() {
+    public static func presentSupportMailComposer() {
         
         let device = UIDevice.current
         let iOSVersion = device.systemVersion

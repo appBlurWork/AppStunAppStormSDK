@@ -1,6 +1,14 @@
+//
+//  File.swift
+//  
+//
+//  Created by Bora Erdem on 5.02.2024.
+//
+
 import Foundation
 
 public final class CacheManager {
+    
     public static let defaults = UserDefaults.standard
     
     public static func cache<T: Codable>(value: T, forKey key: String) {
